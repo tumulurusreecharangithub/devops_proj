@@ -6,3 +6,11 @@
    - name: Print URL
      ansible.builtin.debug:
       msg: URL == {{ URL }}
+
+- name: Demo on play vars
+  hosts: all
+  vars_files: demo-vars.yml
+  tasks:
+   - name: Print URL
+     ansible.builtin.debug:
+      msg: URL =={{ URL }}
