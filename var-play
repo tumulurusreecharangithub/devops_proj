@@ -18,7 +18,7 @@
 - name: Demo on task_level_Variables
   hosts: all
   tasks:
-  - name: print URL
+   - name: print URL
     ansible.builtin.debug:
 	msg: URL=={{URL}}
 	vars:
