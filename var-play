@@ -1,8 +1,8 @@
 - name: Demo on Play vars
-  hosts: al
+  hosts: all
   vars:
    URL: play.example.com
   tasks:
    - name: Print URL
      ansible.builtin.debug:
-      msg: URL == {{URL}}
+      msg: URL == {{ URL }}
