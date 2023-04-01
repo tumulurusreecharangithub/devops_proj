@@ -20,6 +20,6 @@
   tasks:
    - name: print URL
      ansible.builtin.debug:
-	msg: URL=={{URL}}
+	msg: URL == {{URL}}
      vars:
       URL: take.example.com
