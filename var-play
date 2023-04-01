@@ -19,7 +19,7 @@
   hosts: all
   tasks:
    - name: print URL
-    ansible.builtin.debug:
+     ansible.builtin.debug:
 	msg: URL=={{URL}}
-	vars:
-	 URL: take.example.com
+  vars:
+     URL: take.example.com
