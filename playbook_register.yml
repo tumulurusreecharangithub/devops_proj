@@ -3,8 +3,7 @@
   tasks:
    - name: Get Update
      ansible.builtin.shell: uptime
-     register: SHELL_OUTPUT
-     
+     register: SHELL_OUTPUT     
    - name: Print Output
      ansible.builtin.debug:
      msg: "{{SHELL_OUTPUT}}"
