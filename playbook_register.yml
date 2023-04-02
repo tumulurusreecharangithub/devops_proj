@@ -1,0 +1,5 @@
+- name: Demo Register
+  hosts: all
+  tasks:
+   - name: Get Update
+     ansible.builtin.shell: uptime
