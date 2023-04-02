@@ -7,4 +7,8 @@
 
    - name: Print Output
      ansible.builtin.debug:
-       msg: "{{SHELL_OUTPUT}}"
+       msg: "{{SHELL_OUTPUT.stdout}}"
+   
+   - name: Declare a Variable
+     ansible.builtin.set_fact:
+       UPTIME: "{{SHELL_OUTPUT.stdout}}"
