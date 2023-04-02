@@ -10,3 +10,10 @@
     - name: Print Hello Boys
       ansible.builtin.debug:
         msg:  Hello How is 2-second ansible Play
+
+- name: Demo of fact in ansible
+  hosts: all
+  tasks: Print host name
+    - name: Print Host name
+      ansible.builtin.debug:
+        msg: {{ ansible_hostname }}
